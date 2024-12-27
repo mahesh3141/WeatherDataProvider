@@ -1,5 +1,5 @@
 Weather spring boot application for accessing the weather information on basis of postal code.
-Here I am using H2 database to stored the data.
+Here I am using H2 database to stored the data. Datase file name :- weatherdb.mv.db
 To access the table visit http://localhost:8081/h2-ui/
 For login to database username:- admin and password:- admin@123
 There are two tables on the database 
