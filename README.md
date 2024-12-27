@@ -16,3 +16,5 @@ For Weather
 To fetch the weather data use api:- http://localhost:8081/weather/fetch?postalCode=20042&userName=John Doe (First it the for user is active or not then it will stored the data on database)
 To get the history for weather from database via postal code use the api :- http://localhost:8081/weather/historyByPostalCode/41702 
 To get the history for weather from database via username code use the api :- http://localhost:8081/weather/historyByUser/John Doe
+
+Also added the postman collection search the file WeatherReport.postman_collection.json
