@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "24e4a77c-cc59-4c34-a762-eda4e9985d87",
+		"name": "WeatherReport",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "12910558"
+	},
+	"item": [
+		{
+			"name": "FetchWeather via postalCode",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"postalCode\": \"94040\",\r\n  \"userName\": \"John Doe\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/weather/fetch?postalCode=20042&userName=Mahesh Nawale",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"weather",
+						"fetch"
+					],
+					"query": [
+						{
+							"key": "postalCode",
+							"value": "20042"
+						},
+						{
+							"key": "userName",
+							"value": "Mahesh Nawale"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "weather record via user name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/weather/historyByUser/Ravi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"weather",
+						"historyByUser",
+						"Ravi"
+					],
+					"query": [
+						{
+							"key": "userName",
+							"value": "John Doe",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/weather/health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8081/weather/health"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/users?name=Mahesh Nawale",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/users?name=Mahesh Nawale",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Mahesh Nawale"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/users/checkUser/active",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/users/checkUser/active",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"users",
+						"checkUser",
+						"active"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "Mahesh Nawale",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "weather/historyByPostalCode",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8081/weather/historyByPostalCode/95050"
+			},
+			"response": []
+		},
+		{
+			"name": "activate user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "http://localhost:8081/users/activate/8"
+			},
+			"response": []
+		},
+		{
+			"name": "deactivate user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "http://localhost:8081/users/deactivate/8"
+			},
+			"response": []
+		}
+	]
+}
