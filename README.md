@@ -1,4 +1,5 @@
 Weather spring boot application for accessing the weather information on basis of postal code  
+<br> Swagger Api :- http://localhost:8081/swagger-ui/index.html  
 <br>Here I am using H2 database to stored the data. Datase file name :- weatherdb.mv.db  
 <br>To access the table visit http://localhost:8081/h2-ui/  
 <br>For login to database username:- admin and password:- admin@123  
